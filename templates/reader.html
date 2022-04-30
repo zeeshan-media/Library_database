@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>employee page</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <h1> hello {{ user.username }} your role is Reader</h1>
+        <h2><a href="/logout"><button type="button" class="btn btn-link"> Logout</button></a></h2>
+    {% endif %}
+</body>
+</html>
